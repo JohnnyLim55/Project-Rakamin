@@ -15,3 +15,6 @@
 * Target peminjam bisa dipromosikan lebih pada perusahaan berbasis management company, Min/Quar/Oil_Gas_ext, dan Ag/For/Fish/Hunt karena memiliki **rata-rata pinjaman yang besar, jumlah peminjam yang belum begitu banyak, dan paling penting memiliki tingkat gagal bayar yang rendah**. Salah satu hal yang dapat dilakukan untuk mempromosikan pinjaman yaitu memberikan jalur khusus dan potongan bunga pada peminjam dengan sektor perusahaan tersebut.
 * Peningkatan Manajemen Risiko di Industri dengan Tingkat Gagal Bayar Tinggi. Untuk industri seperti Real Estate/Rental/Lease, Finance/Insurance, Transportation/Warehousing dll yang memiliki tingkat gagal bayar tinggi, perusahaan harus lebih berhati-hati dalam manajemen risiko dan penilaian kredit. Ini dapat mencakup peningkatan proses verifikasi, pengembangan strategi pengambilan keputusan yang lebih baik, dan pemantauan aktif pelanggan dalam sektor tersebut.
 * Evaluasi Strategi Pemasaran di Wilayah Dengan Tingkat Gagal Bayar Tinggi. Untuk wilayah seperti Florida, Georgia, Nevada dll yang memiliki tingkat gagal bayar tinggi, perusahaan harus memeriksa strategi pemasaran dan penilaian risiko di wilayah tersebut. Mungkin dapat dilakukan dengan peningkatan dalam penilaian kredit atau pengurangan eksposur risiko di wilayah ini.
+
+# Data Preprocessing 
+* 
