@@ -18,3 +18,27 @@
 * Target peminjam bisa dipromosikan lebih pada perusahaan berbasis management company, Min/Quar/Oil_Gas_ext, dan Ag/For/Fish/Hunt karena memiliki **rata-rata pinjaman yang besar, jumlah peminjam yang belum begitu banyak, dan paling penting memiliki tingkat gagal bayar yang rendah**. Salah satu hal yang dapat dilakukan untuk mempromosikan pinjaman yaitu memberikan jalur khusus dan potongan bunga pada peminjam dengan sektor perusahaan tersebut.
 * Peningkatan Manajemen Risiko di Industri dengan Tingkat Gagal Bayar Tinggi. Untuk industri seperti Real Estate/Rental/Lease, Finance/Insurance, Transportation/Warehousing dll yang memiliki tingkat gagal bayar tinggi, perusahaan harus lebih berhati-hati dalam manajemen risiko dan penilaian kredit. Ini dapat mencakup peningkatan proses verifikasi, pengembangan strategi pengambilan keputusan yang lebih baik, dan pemantauan aktif pelanggan dalam sektor tersebut.
 * Evaluasi Strategi Pemasaran di Wilayah Dengan Tingkat Gagal Bayar Tinggi. Untuk wilayah seperti Florida, Georgia, Nevada dll yang memiliki tingkat gagal bayar tinggi, perusahaan harus memeriksa strategi pemasaran dan penilaian risiko di wilayah tersebut. Mungkin dapat dilakukan dengan peningkatan dalam penilaian kredit atau pengurangan eksposur risiko di wilayah ini.
+
+# Data Preprocessing 
+## Data Cleansing
+* Handle Missing Values
+  - Menghapus feature yang memiliki total missing values >60% dari data, feature yang dihapus adalah ChgOffDate.
+  - Feature yang memiliki missing values adalah feature yang memiliki tipe data string atau object sehingga data yang kosong diisi dengan modus
+* Handle Duplicated Data
+  - Tidak ada duplicated data
+* Handle Outliers
+  - Outliers dideteksi dan dihapus dengan metode Z-Scores. Jumlah baris data setelah dihapus sebanyak 248.928
+* Feature Transformation
+  - Pada feature yang bertipe numerik, dilakukan feature transformation menggunakan log transformation. 
+* Feature Encoding
+  - Feature yang bertipe kategorikal diubah menjadi numerik dengan menggukan feature encoding agar dapat menjadi input pada machine learning
+## Feature Engineering
+* Feature Extraction
+  - Mengembangkan feature baru dari feature baseline yang mungkin dapat meningkatkan performa saat membangun permodelan machine learning.
+* Feature Scaling
+  - Melakukan data scaling agar membuat nilai numerik data memiliki nilai rentan yang sama
+* Feature Selection
+  - Mengambil feature yang relavan berdasarkan nilai korelasi terhadap feature target (MIS_Status_int)
+* Class Imbalance
+  - Nilai 0 dan 1 pada feature target masih tidak seimbang sehingga harus dilakukan class imbalance
+  - Handle class imbalace menggunakan oversampling SMOTE pada data training
